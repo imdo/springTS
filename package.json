@@ -1,0 +1,15 @@
+{
+  "name": "springts",
+  "version": "1.0.0",
+  "description": "the typescript version for Spring",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dest/index.js"
+  },
+  "author": "imad arzmi",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.10"
+  }
+}
