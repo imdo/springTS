@@ -9,22 +9,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var autowired_1 = require("../decorators/autowired");
-var personService_1 = require("./personService");
-var employeService_1 = require("./employeService");
-var Greeter = /** @class */ (function () {
-    function Greeter(message) {
+var _1 = require("../"); /*
+import { PersonService } from "./personService";
+import { EmployeService } from "./employeService";
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
         this.greeting = message;
     }
-    __decorate([
-        autowired_1.Autowired(),
-        __metadata("design:type", personService_1.PersonService)
-    ], Greeter.prototype, "a", void 0);
-    __decorate([
-        autowired_1.Autowired(),
-        __metadata("design:type", employeService_1.EmployeService)
-    ], Greeter.prototype, "b", void 0);
-    return Greeter;
+
+    @Autowired()
+    a:PersonService;
+    @Autowired()
+    b:EmployeService;
+}
+let test:Greeter = new Greeter("hello");
+console.log(test.b.salaryYear(1000));*/
+var WorkerService = /** @class */ (function () {
+    function WorkerService() {
+    }
+    WorkerService.prototype.doWork = function () {
+        console.log("work is done");
+    };
+    WorkerService = __decorate([
+        _1.Service
+    ], WorkerService);
+    return WorkerService;
 }());
-var test = new Greeter("hello");
-console.log(test.b.salaryYear(1000));
+var Main = /** @class */ (function () {
+    function Main() {
+    }
+    __decorate([
+        _1.Autowired(),
+        __metadata("design:type", WorkerService)
+    ], Main.prototype, "o", void 0);
+    return Main;
+}());
+var ma = new Main();
+ma.o.doWork();

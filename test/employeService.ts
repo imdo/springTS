@@ -1,4 +1,4 @@
-import {Service} from "../decorators/Service";
+import {Service} from "../";
 @Service
 export class EmployeService{
     salaryYear(MonthSalary:number):number{

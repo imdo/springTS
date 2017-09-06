@@ -5,6 +5,7 @@ require("reflect-metadata");
 function Autowired() {
     return function (target, propertyKey) {
         var t = Reflect.getMetadata("design:type", target, propertyKey);
+        console.log(t);
         var instance;
         box_1.Services.forEach(function (elem, index) {
             if (elem.className == t.name) {

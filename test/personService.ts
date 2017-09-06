@@ -1,4 +1,4 @@
-import { Service } from "../decorators/service";
+import { Service } from "../";
 @Service
 class PersonService{
     public name:string;

@@ -10,7 +10,7 @@
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./dest/application.js",                       /* Concatenate and emit output to single file. */
-     "outDir": "./dest",                        /* Redirect output structure to the directory. */
+    // "outDir": "./dest",                        /* Redirect output structure to the directory. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
@@ -52,7 +52,8 @@
      "emitDecoratorMetadata": true         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": [
-        "**/*"
+        "**/*",
+        "*"
     ],
   "exclude": [
         "node_modules",

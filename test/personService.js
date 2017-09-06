@@ -6,7 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var service_1 = require("../decorators/service");
+var _1 = require("../");
 var PersonService = /** @class */ (function () {
     function PersonService() {
     }
@@ -14,7 +14,7 @@ var PersonService = /** @class */ (function () {
         return "name";
     };
     PersonService = __decorate([
-        service_1.Service
+        _1.Service
     ], PersonService);
     return PersonService;
 }());
