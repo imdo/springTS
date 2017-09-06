@@ -1,6 +1,6 @@
 {
   "name": "springts",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "the typescript version for Spring",
   "main": "index.js",
   "scripts": {
